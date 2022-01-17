@@ -28,11 +28,14 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  the counter function is inside of the function counterMaker which when it is invoked increases the value
+  of count by 1. counter2 is a function that increase the global variable count by 1
   2. Which of the two uses a closure? How can you tell?
-  
+  counter1 is a closer because it is inside of another function countMaker. they use each other within the function
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     counter2 be better?  counter 1 would be preferable if you want to store and increase the value of counter.
+     counter2 would be better if you wanted to value of counter to reset after the function is called/invoked
 */
 
 // counter1 code
@@ -62,8 +65,8 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+    return Math.floor(Math.random()* 3)
 }
 
 
