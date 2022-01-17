@@ -84,8 +84,18 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore(inning,rounds){
+  let total = []
+  let homeScore = 0;
+  let awayScore = 0;
+
+    homeScore = inning() * rounds
+    awayScore = inning() * rounds
+    total = {
+      Home: homeScore,
+      Away: awayScore
+    }
+    return total
 }
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
